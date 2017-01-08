@@ -26,4 +26,4 @@ Then restart Telegraf.
 
 ## License
 
-This script is provided in MIT license,
+This script is provided in MIT license.
