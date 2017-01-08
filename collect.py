@@ -45,13 +45,14 @@ station_time = 'time_point'
 error_indicator = 'error'
 
 # convert data to specific type for InfluxDB line protocol
+string_wrapper_tag = lambda s: str(s)
 string_wrapper = lambda s: "\"{}\"".format(s)
 int_wrapper = lambda s: "{}i".format(int(s))
 float_wrapper = lambda s: str(s)
 type_converters = {
-    'area': string_wrapper,
-    'position_name': string_wrapper,
-    'station_code': string_wrapper,
+    'area': string_wrapper_tag,
+    'position_name': string_wrapper_tag,
+    'station_code': string_wrapper_tag,
     'so2': int_wrapper,
     'pm10': int_wrapper,
     'aqi': int_wrapper,
