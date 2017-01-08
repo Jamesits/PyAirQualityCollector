@@ -19,7 +19,7 @@ endpoint = 'http://www.pm25.in/api/querys/aqi_details.json'
 payload = {
     'token': '5j1znBVAsnSf5xQyNQyq',
     'city': '',
-    'avg': 'false',
+    'avg': 'true',
 }
 headers = {
     'user-agent': 'PyAirQualityCollector/0.1 (+https://github.com/Jamesits/PyAirQualityCollector)'
