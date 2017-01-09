@@ -2,6 +2,12 @@
 
 A simple script to capture AQI (Air Quality Index) from [pm25.in](http://www.pm25.in/) public API and output as InfluxDB line protocol. 
 
+## Example Site
+
+Visit my [Grafana AQI dashboard](https://grafana.swineson.me/dashboard/db/air-quality)
+
+Improvements & donation welcomed. Email to: aqi#public.swineson.me
+
 ## Usage
 
 Clone this repo and run `./collect.py`. 
