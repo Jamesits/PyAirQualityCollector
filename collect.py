@@ -77,8 +77,8 @@ for city in cities:
     j = r.json()
     if r.status_code != requests.codes.ok or error_indicator in j:
         # got some error
-        print("Request failed for city: {}".format(city))
-        print("Response code: {}".format(r.status_code))
+        print("Request failed for city: {}".format(city), file=sys.stderr)
+        print("Response code: {}".format(r.status_code), file=sys.stderr)
         pprint.PrettyPrinter(indent=4, stream=sys.stderr).pprint(j)
     else:
         for point in j:
