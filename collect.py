@@ -6,6 +6,7 @@ import time
 import sys
 
 # config
+api_key = '5j1znBVAsnSf5xQyNQyq'
 cities = frozenset((
     'hangzhou',
     'shijiazhuang',
@@ -25,7 +26,7 @@ cities = frozenset((
 ))
 endpoint = 'http://www.pm25.in/api/querys/aqi_details.json'
 payload = {
-    'token': '5j1znBVAsnSf5xQyNQyq',
+    'token': api_key,
     'city': '',
     'avg': 'true',
 }
