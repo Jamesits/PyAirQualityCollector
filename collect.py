@@ -71,6 +71,7 @@ type_converters = {
     'co': float_wrapper,
     'primary_pollutant': string_wrapper,
 }
+filter_zeros = True
 
 # program
 for city in cities:
@@ -84,6 +85,10 @@ for city in cities:
         pprint.PrettyPrinter(indent=4, stream=sys.stderr).pprint(j)
     else:
         for point in j:
+            # filter zeros
+            if filter_zeros and all(value == 0 for _, value in {key:point[key] for key in station_fields}.items()):
+                print("Data error for city: {} point: {}|{}".format(city, point['station_code'], point['position_name']), file=sys.stderr)
+                continue
             # get time
             timestamp = int(time.mktime(time.strptime(point[station_time], '%Y-%m-%dT%H:%M:%SZ'))  * 1000000000)
             # construct tags
