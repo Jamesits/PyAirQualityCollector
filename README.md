@@ -10,7 +10,12 @@ Improvements & donation welcomed. Email to: aqi#public.swineson.me
 
 ## Usage
 
-Clone this repo and run `./collect.py`. 
+1. Request a new API key from [PM25.in API](http://www.pm25.in/api_doc)
+2. Clone this repo
+3. Fill API key to `collect.py`
+4. run `python3 ./collect.py`, capture `stdout` for data
+
+Don't use public API key too frequently; it has limits. Cache the result if you need to debug other part of your program. If you are writing a scawler, 1 request every hour is enough.
 
 ### Select What to Collect
 
