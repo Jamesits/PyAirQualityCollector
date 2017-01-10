@@ -1,6 +1,6 @@
 # PyAirQualityCollector
 
-A simple script to capture AQI (Air Quality Index) from [pm25.in](http://www.pm25.in/) public API and output as InfluxDB line protocol. 
+A simple script to capture AQI (Air Quality Index) from [PM25.in](http://www.pm25.in/) public API and output as InfluxDB line protocol. 
 
 ## Example Site
 
