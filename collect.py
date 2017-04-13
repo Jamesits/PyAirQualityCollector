@@ -23,6 +23,7 @@ cities = frozenset((
     'shenzhen',
     'suzhou',
     'guangzhou',
+    'chengdu',
 ))
 endpoint = 'http://www.pm25.in/api/querys/aqi_details.json'
 payload = {
